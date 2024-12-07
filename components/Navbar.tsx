@@ -33,6 +33,20 @@ const Navbar = () => {
                     Home
                 </Link>
                 <Link
+                    href={user ? "/about" : "/sign-in"}
+                    className={`hover:text-red-1 ${pathname === "/about" && "text-red-1"
+                        }`}
+                >
+                    About
+                </Link>
+                <Link
+                    href={user ? "/shop" : "/sign-in"}
+                    className={`hover:text-red-1 ${pathname === "/shop" && "text-red-1"
+                        }`}
+                >
+                    Shop
+                </Link>
+                <Link
                     href={user ? "/wishlist" : "/sign-in"}
                     className={`hover:text-red-1 ${pathname === "/wishlist" && "text-red-1"
                         }`}

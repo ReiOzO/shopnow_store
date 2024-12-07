@@ -44,3 +44,19 @@ type OrderItemType = {
     quantity: number;
     _id: string;
 }
+
+type ArticleType = {
+    _id: string;
+    title: string;
+    description: string;
+    image: string;
+};
+
+type ReviewType = {
+    _id: string;
+    customerClerkId: string;
+    product: ProductType;
+    rating: number;
+    comment: string;
+    createdAt: Date;
+}

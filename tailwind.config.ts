@@ -87,10 +87,19 @@ const config: Config = {
       ],
     },
     extend: {
+      gridTemplateColumns: {
+        // Cấu hình số lượng cột tối đa mỗi dòng
+        articles: 'repeat(4, minmax(0, 1fr))', // 4 cột mỗi dòng
+      },
       colors: {
         "red-1": "#FF0000",
         "grey-1": "#F7F7F7",
         "grey-2": "#8A8A8A",
+        "footer-bg": "#87CEFA",
+        "footer-text": "#FFFFFF",
+      },
+      spacing: {
+        footer: "50px", // Padding cho footer
       },
     },
   },
